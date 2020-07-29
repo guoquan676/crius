@@ -23,9 +23,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <mybatisplus.version>3.3.3.6-SNAPSHOT</mybatisplus.version>
+        <mybatisplus.version>3.3.2</mybatisplus.version>
         <skipTests>true</skipTests>
         <alibaba.druid>1.0.31</alibaba.druid>
+        <mysql>8.0.11</mysql>
     </properties>
 
     <dependencyManagement>
@@ -50,8 +51,24 @@
                 <artifactId>druid</artifactId>
                 <version>${alibaba.druid}</version>
             </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatisplus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
