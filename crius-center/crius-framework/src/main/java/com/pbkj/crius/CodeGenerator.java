@@ -17,12 +17,12 @@ import java.util.Scanner;
 
 public class CodeGenerator {
 	// 包名
-	private static final String packageName = "com.pbkj.cloud.comment";
-	private static final String author = "王继博";
-	private static final String db_url = "jdbc:mysql://rm-2zebdwei2461gp8352o.mysql.rds.aliyuncs.com:3306/pbkj_zz?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=true&allowMultiQueries=true&serverTimezone=CTT";
+	private static final String packageName = "com.pbkj.crius.comment";
+	private static final String author = "GZQ";
+	private static final String db_url = "jdbc:mysql://localhost:3306/crius?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&allowMultiQueries=true&serverTimezone=CTT";
 	private static final String db_driver = "com.mysql.jdbc.Driver";
-	private static final String db_userName = "pbkj_zz";
-	private static final String db_password = "Pbcom135789";
+	private static final String db_userName = "root";
+	private static final String db_password = "123456";
 	private static final String entityPackageName = "entity";
 	private static final String entityDTOPackageName = "entity.dto";
 	private static final String mapperPackageName = "dao";

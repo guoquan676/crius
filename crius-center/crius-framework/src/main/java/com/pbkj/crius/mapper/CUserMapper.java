@@ -1,7 +1,10 @@
 package com.pbkj.crius.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.pbkj.crius.entity.param.UserCursorParam;
 import com.pbkj.crius.entity.po.CUser;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,5 @@ import com.pbkj.crius.entity.po.CUser;
  */
 public interface CUserMapper extends BaseMapper<CUser> {
 
+    List<CUser> selectCursorList(UserCursorParam userCursorParam);
 }

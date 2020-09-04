@@ -2,6 +2,8 @@ package com.pbkj.crius.api.controller;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.pbkj.crius.common.utils.CursorModel;
+import com.pbkj.crius.entity.param.UserCursorParam;
 import com.pbkj.crius.entity.param.UserQueryParam;
 import com.pbkj.crius.entity.po.CUser;
 import com.pbkj.crius.entity.vo.UserVo;
@@ -29,7 +31,6 @@ public class CUserController {
     @GetMapping
     public UserVo selectById(Long userId) {
         CUser byUniqueId = userService.getByUniqueId(userId);
-        int a = 1/0;
         return new UserVo(byUniqueId);
     }
 
@@ -37,6 +38,11 @@ public class CUserController {
     public List<UserVo> conditionSearch(@RequestBody UserQueryParam userQueryParam) {
         IPage<CUser> age = userService.pageByParam(userQueryParam);
         return age.convert(UserVo::new).getRecords();
+    }
+
+    @PostMapping("/selectCursorList")
+    public CursorModel selectCursorList(@RequestBody UserCursorParam userCursorParam) {
+        return userService.selectCursorList(userCursorParam);
     }
 }
 

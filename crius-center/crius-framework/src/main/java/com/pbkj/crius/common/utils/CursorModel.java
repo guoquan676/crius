@@ -1,5 +1,6 @@
 package com.pbkj.crius.common.utils;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.github.phantomthief.util.ThrowableFunction;
 import com.google.common.collect.Lists;
 import com.pbkj.crius.entity.po.BasePo;
@@ -15,9 +16,17 @@ import java.util.List;
 public class CursorModel<U extends BaseVo> {
 
     private static final Integer DEFAULT_LIMIT = 10;
-
-    private Long cursor;
+    private Long cursor = Long.MAX_VALUE;
+    private Integer size = DEFAULT_LIMIT;
     private List<U> records;
+
+    public Integer getSize() {
+        return size;
+    }
+
+    public void setSize(Integer size) {
+        this.size = size;
+    }
 
     public List<U> getRecords() {
         return records;

@@ -13,7 +13,7 @@ spring:
 # Logger Config
 logging:
   level:
-    com.baomidou.mybatisplus.samples.quickstart: debug
+    com.pbkj.crius.mapper: debug
 management:
   endpoints:
     web:

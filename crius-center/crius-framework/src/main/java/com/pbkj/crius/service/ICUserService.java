@@ -3,6 +3,8 @@ package com.pbkj.crius.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.pbkj.crius.common.utils.CursorModel;
+import com.pbkj.crius.entity.param.UserCursorParam;
 import com.pbkj.crius.entity.param.UserQueryParam;
 import com.pbkj.crius.entity.po.CUser;
 
@@ -19,4 +21,6 @@ public interface ICUserService extends IService<CUser> {
     IPage<CUser> pageByParam(UserQueryParam userQueryParam);
 
     CUser getByUniqueId(Long userId);
+
+    CursorModel selectCursorList(UserCursorParam userCursorParam);
 }

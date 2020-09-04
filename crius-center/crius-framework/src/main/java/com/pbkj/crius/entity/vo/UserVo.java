@@ -18,7 +18,7 @@ public class UserVo extends BaseVo {
     public UserVo(CUser user) {
         BeanUtils.copyProperties(user, this);
         Long createdTime = user.getCreatedTime();
-        this.createdTime = DateUtil.format(new Date(createdTime), DatePattern.NORM_DATETIME_PATTERN);
+        this.createdTime = DateUtil.format(DateUtil.date(createdTime), DatePattern.NORM_DATETIME_PATTERN);
     }
 
     private String username;

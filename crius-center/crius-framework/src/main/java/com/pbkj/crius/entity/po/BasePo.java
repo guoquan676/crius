@@ -19,10 +19,4 @@ public class BasePo implements Serializable {
 
     @TableField(fill = FieldFill.INSERT)
     private Long createdTime;
-
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private String updatedBy;
-
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Long updatedTime;
 }

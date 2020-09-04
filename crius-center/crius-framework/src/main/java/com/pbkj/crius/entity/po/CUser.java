@@ -23,12 +23,4 @@ public class CUser extends BasePo {
      * 年龄
      */
     private Integer age;
-    /**
-     * 创建人
-     */
-    private String createdBy;
-    /**
-     * 创建时间
-     */
-    private Long createdTime;
 }
