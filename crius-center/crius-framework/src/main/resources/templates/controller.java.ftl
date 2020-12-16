@@ -15,7 +15,7 @@ import com.pbkj.cloud.comment.base.BaseResponse;
 import com.pbkj.cloud.comment.base.ResultCode;
 import ${package.Service}.${table.serviceName};
 import ${package.Entity}.${entity};
-import ${package.Entity}.dto.${dtoName};
+import ${package.Parent}.${dtoName};
 
 /**
  * 	${table.comment} 

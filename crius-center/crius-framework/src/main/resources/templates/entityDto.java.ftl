@@ -1,4 +1,4 @@
-package ${package.Entity}.dto;
+package ${package.Parent};
 
 import java.util.Date;
 

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import ${package.Entity}.${entity};
-import ${package.Entity}.dto.${dtoName};
+import ${package.Parent}.${dtoName};
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>api</module>
-        <module>admin</module>
+        <module>system-admin</module>
     </modules>
 
 </project>

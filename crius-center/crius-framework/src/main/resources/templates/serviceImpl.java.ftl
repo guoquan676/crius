@@ -13,7 +13,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import ${package.Mapper}.${table.mapperName};
 import ${package.Entity}.${entity};
-import ${package.Entity}.dto.${dtoName};
+import ${package.Parent}.${dtoName};
 import ${package.Service}.${table.serviceName};
 import com.pbkj.cloud.framework.base.ResultCode;
 import com.pbkj.cloud.framework.vo.ResultPageModel;

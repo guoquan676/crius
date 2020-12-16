@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import ${package.Entity}.${entity};
-import ${package.Entity}.dto.${dtoName};
+import ${package.Parent}.${dtoName};
 import com.pbkj.cloud.framework.vo.ResultPageModel;
 
 /**

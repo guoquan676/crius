@@ -18,7 +18,7 @@
 </#list>
     </resultMap>
     
-    <resultMap id="BaseResultMap_DTO" type="${package.Entity}.dto.${dtoName}">
+    <resultMap id="BaseResultMap_DTO" type="${package.Parent}.${dtoName}">
 <#list table.fields as field>
 <#if field.keyFlag>
         <id column="${field.name}" property="${field.propertyName}" />

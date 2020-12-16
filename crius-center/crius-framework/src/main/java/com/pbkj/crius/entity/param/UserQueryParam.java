@@ -1,13 +1,8 @@
 package com.pbkj.crius.entity.param;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.pbkj.crius.common.utils.PageModel;
-import com.pbkj.crius.entity.po.CUser;
+import com.pbkj.crius.common.utils.ResultPageModel;
+import com.pbkj.crius.entity.po.SystemUser;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.Objects;
 
 /**
  * @author GZQ
@@ -15,7 +10,7 @@ import java.util.Objects;
  * @date 2020/7/24 8:58
  **/
 @Data
-public class UserQueryParam extends PageModel<CUser> {
+public class UserQueryParam extends ResultPageModel<SystemUser> {
 
     private Long id;
     /**

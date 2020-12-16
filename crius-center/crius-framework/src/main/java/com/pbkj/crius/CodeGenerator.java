@@ -10,22 +10,19 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class CodeGenerator {
 	// 包名
-	private static final String packageName = "com.pbkj.crius.comment";
-	private static final String author = "GZQ";
+	private static final String packageName = "com.pbkj.crius.admin";
+	private static final String author = "王继博";
 	private static final String db_url = "jdbc:mysql://localhost:3306/crius?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&allowMultiQueries=true&serverTimezone=CTT";
 	private static final String db_driver = "com.mysql.jdbc.Driver";
 	private static final String db_userName = "root";
 	private static final String db_password = "123456";
-	private static final String entityPackageName = "entity";
+	private static final String entityPackageName = "entity.po";
 	private static final String entityDTOPackageName = "entity.dto";
-	private static final String mapperPackageName = "dao";
+	private static final String mapperPackageName = "mapper";
 	private static final String controllerPackageName = "controller";
 	// 代码生成器
 	private static final AutoGenerator mpg = new AutoGenerator();

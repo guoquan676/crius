@@ -1,0 +1,13 @@
+server:
+  port: ${SERVER_PORT:8010}
+spring:
+  datasource:
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.31.12:3306/crius?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8
+# Logger Config
+logging:
+  level:
+    com.pbkj.crius.admin.mapper: debug

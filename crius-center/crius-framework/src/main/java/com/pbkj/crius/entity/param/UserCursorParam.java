@@ -1,8 +1,7 @@
 package com.pbkj.crius.entity.param;
 
 import com.pbkj.crius.common.utils.CursorModel;
-import com.pbkj.crius.common.utils.PageModel;
-import com.pbkj.crius.entity.po.CUser;
+import lombok.Builder;
 import lombok.Data;
 
 /**
