@@ -19,7 +19,7 @@ public class IntegerTest {
         int bb = 3;
         System.out.println("1.包装类和基础类比较会自动拆箱");
         System.out.println("2.不同基础类比较会隐式转换，向上转换，如：int 与 long 进行比较时，int 会自动进行隐式的类型转换，将int提升为 long 类型");
-        System.out.println("隐身转换");
+        System.out.println("3.隐式转换，自动提升高精度类型");
         System.out.println(aa == bb);
         System.out.println(c==d);
         System.out.println("要想获取对象的内存地址应使用System.identityHashCode()方法");
