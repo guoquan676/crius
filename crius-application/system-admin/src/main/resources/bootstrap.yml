@@ -1,15 +1,27 @@
 server:
   port: ${SERVER_PORT:8011}
+  servlet:
+    context-path: /system-admin
 spring:
   application:
-    name: system-admin
+    name: crius
+  profiles:
+    active: dev
   cloud:
     nacos:
       discovery:
-        server-addr: ${REGISTER_HOST:192.168.31.233}:${REGISTER_PORT:8848}
+        server-addr: ${REGISTER_HOST:8.131.93.142}:${REGISTER_PORT:8848}
+        namespace: 338c6e34-0d7a-4bd8-9b37-2d14a73ebe6c
       config:
-        server-addr: ${REGISTER_HOST:192.168.31.233}:${REGISTER_PORT:8848}
+        server-addr: 8.131.93.142:8848
+        namespace: 338c6e34-0d7a-4bd8-9b37-2d14a73ebe6c
+        name: crius-dev
+        group: DEFAULT_GROUP
         file-extension: yml
+# Logger Config
+logging:
+  level:
+    com.pbkj.crius.mapper: debug
 management:
   endpoints:
     web:
