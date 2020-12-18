@@ -1,4 +1,4 @@
-package com.pbkj.crius.admin;
+package com.pbkj.crius.admin.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

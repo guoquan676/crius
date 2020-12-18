@@ -9,8 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 /**
  * @author GZQ
  */
-@SpringBootApplication(scanBasePackages = {"com.pbkj.crius"})
-@MapperScan(basePackages = {"com.pbkj.crius.mapper"})
+@SpringBootApplication
 @EnableDiscoveryClient
 public class App {
     public static void main(String[] args) {

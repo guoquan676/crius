@@ -33,7 +33,6 @@ public class SystemUserController {
     @Resource
     private ISystemUserService userService;
 
-    @Value("${spring.datasource.password}")
     private String password;
 
     @GetMapping
