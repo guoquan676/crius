@@ -4,16 +4,18 @@ server:
     context-path: /aftermarket_customer_api
 spring:
   application:
-    name: aftermarket_customer_api
+    name: crius
+  profiles:
+    active: dev
   cloud:
     nacos:
       discovery:
-        server-addr: ${REGISTER_HOST:59.110.16.239}:${REGISTER_PORT:8848}
-        namespace: 4e6dea98-b643-4585-842e-0609fe4208fe
+        server-addr: ${REGISTER_HOST:8.131.93.142}:${REGISTER_PORT:8848}
+        namespace: 338c6e34-0d7a-4bd8-9b37-2d14a73ebe6c
       config:
-        server-addr: 59.110.16.239:8848
-        namespace: 4e6dea98-b643-4585-842e-0609fe4208fe
-        name: aftermarket_customer_api-dev
+        server-addr: 8.131.93.142:8848
+        namespace: 338c6e34-0d7a-4bd8-9b37-2d14a73ebe6c
+        name: crius-dev
         group: DEFAULT_GROUP
         file-extension: yml
 # Logger Config

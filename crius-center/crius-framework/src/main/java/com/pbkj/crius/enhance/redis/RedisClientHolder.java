@@ -62,9 +62,9 @@ public class RedisClientHolder {
         try {
             Map<String, Object> stringObjectMap = YamlUtils.yamlHandler();
             String url = (String) stringObjectMap.get("redis.url");
-            String port = (String) stringObjectMap.get("redis.port");
-            String password = (String) stringObjectMap.get("redis.password");
-            String rdIdx = (String) stringObjectMap.get("redis.rdIdx");
+            String port = String.valueOf(stringObjectMap.get("redis.port")) ;
+            String password = String.valueOf(stringObjectMap.get("redis.password"));
+            String rdIdx = String.valueOf(stringObjectMap.get("redis.rdIdx"));
             redisUrl = url;
             redisPort = Integer.parseInt(port);
             redisPassword = password;
