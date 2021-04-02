@@ -20,7 +20,7 @@
         <mybatisplus.version>3.3.2</mybatisplus.version>
         <skipTests>true</skipTests>
         <alibaba.druid>1.0.31</alibaba.druid>
-        <mysql>8.0.11</mysql>
+        <mysql>8.0.16</mysql>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
