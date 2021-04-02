@@ -20,6 +20,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.14.1</version>
+        </dependency>
         <!--MP-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -80,6 +90,10 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-configuration2</artifactId>
             <version>2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <dependency>
             <groupId>org.yaml</groupId>

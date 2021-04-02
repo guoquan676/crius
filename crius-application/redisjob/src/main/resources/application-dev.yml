@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: asdf1001
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/crius?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+redis:
+  url: 127.0.0.1
+  port: 6379
+  password: 123456
+  rdIdx: 0

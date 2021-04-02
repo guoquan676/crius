@@ -14,13 +14,13 @@ import java.util.*;
 
 public class CodeGenerator {
 	// 包名
-	private static final String packageName = "com.pbkj.crius.admin";
-	private static final String author = "王继博";
-	private static final String db_url = "jdbc:mysql://localhost:3306/crius?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&allowMultiQueries=true&serverTimezone=CTT";
+	private static final String packageName = "cn.codemao.botmao.admin";
+	private static final String author = "gzq";
+	private static final String db_url = "jdbc:mysql://rm-bp1udh67050zd1n0b115.mysql.rds.aliyuncs.com/botmao?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&allowMultiQueries=true&serverTimezone=CTT";
 	private static final String db_driver = "com.mysql.jdbc.Driver";
-	private static final String db_userName = "root";
-	private static final String db_password = "123456";
-	private static final String entityPackageName = "entity.po";
+	private static final String db_userName = "chenpeng3";
+	private static final String db_password = "LW1Kfae0HijbSh8iogs79uhnFHz6MZyP";
+	private static final String entityPackageName = "domain.entity";
 	private static final String entityDTOPackageName = "entity.dto";
 	private static final String mapperPackageName = "mapper";
 	private static final String controllerPackageName = "controller";
