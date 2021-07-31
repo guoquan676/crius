@@ -1,0 +1,18 @@
+server:
+  port: 8033
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+bloom-filter-config:
+  itemsMap:
+    - name: bloomGoods
+      key: goods
+      expectedInsertions: 12
+      falseProbability: 0.01
+    - name: bloomOrder
+      key: order
+      expectedInsertions: 20000
+      falseProbability: 0.00001
+      #用上面的两个数据可以计算出，长度
